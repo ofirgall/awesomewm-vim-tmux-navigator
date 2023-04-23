@@ -3,7 +3,7 @@
 dir=$1
 
 wm_focus() {
-	awesome-client 'awesome.emit_signal("navigator::focus", "'"$dir"'")'
+	awesome-client 'awesome.emit_signal("navigator::focus", "'"$dir"'")' 2> /dev/null
 }
 
 case "$dir" in
